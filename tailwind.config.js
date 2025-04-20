@@ -2,7 +2,11 @@
  export default {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Open Sans", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
