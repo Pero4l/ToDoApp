@@ -9,180 +9,103 @@
 </head>
 <body class="bg-gray-100 font-body">
     <!-- NAV BAR -->
-   <nav class="flex justify-between items-center p-3 bg-blue-400 lg:px-10">
-    <div class=" flex lg:hidden">
-        <button id="hamburger-bnt" class="inline-flex mr-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-        </button>
+    <nav class="flex justify-between items-center p-3 bg-blue-400 lg:px-10">
+        <div class="flex lg:hidden">
+            <button id="hamburger-bnt" class="inline-flex mr-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <em><span class="text-4xl lg:text-6xl">TO-DO</span></em>
+        <button><i class='bx bx-search text-4xl lg:text-6xl'></i></button>
+    </nav>
+
+    <!-- DATE -->
+    <div class="py-1 px-1 lg:p-2 lg:px-20">
+        <input class="bg-[#435ddd] w-full p-4 text-2xl lg:text-4xl" type="date" value="2025-04-18">
     </div>
 
-    <em><span class="text-4xl lg:text-6xl">TO-DO</span></em>
-
-   <button> <i class='bx bx-search text-4xl lg:text-6xl' undefined ></i></button>
-</nav>
-
-<!-- DATE AND BUTTON  -->
-
-    <div class="flex  py-1 px-1 lg:p-0">
-    <input class="bg-[#435ddd]  text-2xl lg:text-4xl lg:px-36 lg:relative left-12" type="date" value="2025-04-18" >
-    <button class="text-2xl bg-red-300 px-8 lg:px-[420px] hover:bg-[#e39898]">Add Task <i class='bx bx-alarm-add'></i></button>
+    <!-- ADD TASK -->
+    <div class="p-2 lg:p-5 lg:px-32 lg:flex">
+        <input id="add" class="p-4 w-60 border-[1px] border-[#7b7a7a] border-solid lg:w-[1200px]" type="text" placeholder="Input Task">
+        <button id="button" class="bg-green-500 p-4 text-white hover:scale-105 transition-transform duration-900">Add Task</button>
     </div>
 
-    <!-- TO-DO COUNT -->
-
+    <!-- TO-DO -->
     <div class="lg:flex justify-between lg:mx-20">
         <div>
-
-    <h1 class="font-medium lg:text-2xl p-3 lg:p-10 lg:px-12">TO DO (4)</h1>
-
-    <!-- CONTENT  -->
-     <!-- UNDONE -->
-
-   
-        <div class="flex px-2 lg:px-14">
-            <div class="w-2 h-20 lg:h-[83px] bg-red-600"></div>
-                    <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                        <p class="lg:text-2xl">
-                            13:00 <br> <span class="text-2xl lg:text-3xl">Party</span>
-                        </p>
-                        <i class='bx bx-circle text-3xl '></i>
-                    </div>
-        
-                   
-                    <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                        <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                          <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                      </div>
-        
-                </div><br>
-        
-                <!--  -->
-        
-                <div class="flex px-2 lg:px-14">
-                    <div class="w-2 h-20 lg:h-[83px] bg-red-600"></div>
-                            <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                                <p class="lg:text-2xl">
-                                    18:15 <br> <span class="text-2xl lg:text-3xl">Dance</span>
-                                </p>
-                                <i class='bx bx-circle text-3xl '></i>
-                            </div>
-        
-                            <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                              <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                                <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                            </div>
-        
-                    
-                        </div><br>
-        
-                <!--  -->
-        
-                <div class="flex px-2 lg:px-14">
-                    <div class="w-2 h-20 lg:h-[83px] bg-red-600"></div>
-                            <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                                <p class="lg:text-2xl">
-                                    22:00 <br> <span class="text-2xl lg:text-3xl">Pray</span>
-                                </p>
-                                <i class='bx bx-circle text-3xl '></i>
-                            </div>
-        
-                            
-                            <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                                <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                                  <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                              </div>
-        
-                        </div><br>
-        
-                <!--  -->
-        
-                <div class="flex px-2 lg:px-14">
-                    <div class="w-2 h-20 lg:h-[83px] bg-red-600"></div>
-                            <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                                <p class="lg:text-2xl">
-                                    01:20 <br> <span class="text-2xl lg:text-3xl">Sleep</span>
-                                </p>
-                                <i class='bx bx-circle text-3xl '></i>
-                            </div>
-        
-                          
-                            <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                                <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                                  <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                              </div>
-        
-        
-                        </div><br><br>
-       </div>
-
+            <h1 class="font-medium lg:text-2xl p-3 lg:p-10 lg:px-12">TO DO </h1>
+            <div id="undone"></div>
+        </div>
 
         <!-- DONE -->
-
-       <div>
-        <h1 class="font-medium lg:text-2xl p-3 lg:p-10 lg:px-12"> DONE (3)</h1>
-
-
-        <div class="flex px-2 lg:px-14">
-            <div class="w-2 h-20 lg:h-[83px] bg-green-600"></div>
-                    <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                        <p class="lg:text-2xl">
-                            12:10 <br> <span class="text-2xl lg:text-3xl">Coding</span>
-                        </p>
-                        <i class='bx bxs-check-circle text-3xl' style='color:#11e920'  ></i>
-                    </div>
-
-                   
-                    <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                        <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                          <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                      </div>
-
-                </div><br>
-
-            <!--  -->
-
-
-        <div class="flex px-2 lg:px-14">
-            <div class="w-2 h-20 lg:h-[83px] bg-green-600"></div>
-                    <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                        <p class="lg:text-2xl">
-                            09:30 <br> <span class="text-2xl lg:text-3xl">Breakfast</span>
-                        </p>
-                        <i class='bx bxs-check-circle text-3xl' style='color:#11e920'  ></i>
-                    </div>
-
-                   
-                    <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                        <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                          <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                      </div>
-
-                </div><br>
-
-                <!--  -->
-
-
-        <div class="flex px-2 lg:px-14">
-            <div class="w-2 h-20 lg:h-[83px] bg-green-600"></div>
-                    <div class="flex items-center justify-between  bg-white w-full lg:w-[260px] p-2">
-                        <p class="lg:text-2xl">
-                            15:00 <br> <span class="text-2xl lg:text-3xl">Video game</span>
-                        </p>
-                        <i class='bx bxs-check-circle text-3xl' style='color:#11e920'  ></i>
-                    </div>
-
-                   
-                    <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
-                        <button>  <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'  ></i> <br>
-                          <span class=" lg:text-1xl text-white font-medium">Delete</span></button>
-                      </div>
-
-                </div>
-       </div>
+        <div>
+            <h1 class="font-medium lg:text-2xl p-3 lg:p-10 lg:px-12"> DONE </h1>
+            <div id="done"></div>
+        </div>
     </div><br>
-    
 
+    <script>
+        let input = document.getElementById("add");
+        let buttonTo = document.getElementById("button");
+        let undone = document.getElementById("undone");
+        let done = document.getElementById("done");
+
+        buttonTo.addEventListener("click", function () {
+            let id = new Date().getTime();
+            let inputValue = input.value;
+
+            if (inputValue) {
+                let newPara = document.createElement("div");
+                newPara.id = id;
+                newPara.innerHTML = `
+                    <div class="flex px-2 lg:px-14">
+                        <div class="w-2 h-20 lg:h-[83px] bg-red-600"></div>
+                        <div class="flex items-center justify-between px-5 bg-white w-full lg:w-[260px] p-2">
+                            <p class="lg:text-2xl">
+                                <span class="text-2xl lg:text-3xl">${inputValue}</span>
+                            </p>
+                            <input class="scale-150" type="checkbox">
+                        </div>
+                        <div class="bg-red-700 px-4 py-2 text-center rounded-r-lg">
+                            <button onclick="deleteTodo(${id})">  
+                                <i class='bx bx-trash text-4xl hover:scale-110 transition-transform duration-900' style='color:#ffffff'></i>
+                                <span class="lg:text-1xl text-white font-medium">Delete</span>
+                            </button>
+                        </div>
+                    </div><br>
+                `;
+                undone.appendChild(newPara);
+
+                
+                let checkbox = newPara.querySelector('input[type="checkbox"]');
+                checkbox.addEventListener('change', function () {
+                    checkTodo(checkbox, newPara);
+                });
+            }
+        });
+
+
+
+        function deleteTodo(id) {
+            let item = document.getElementById(id);
+            item.remove();
+        }
+
+        
+        function checkTodo(checkbox, task) {
+            let colorBar = task.querySelector('div'); 
+
+            if (checkbox.checked) {
+                done.appendChild(task);
+                colorBar.classList.add('bg-green-600');
+            } else {
+                undone.appendChild(task);
+                colorBar.classList.remove('bg-green-600');
+                
+            }
+        }
+    </script>
 </body>
 </html>
