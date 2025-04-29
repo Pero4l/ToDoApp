@@ -55,6 +55,8 @@
         buttonTo.addEventListener("click", function () {
             let id = new Date().getTime();
             let inputValue = input.value;
+            input.value = ""
+
 
             if (inputValue) {
                 let newPara = document.createElement("div");
