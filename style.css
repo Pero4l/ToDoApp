@@ -589,6 +589,18 @@ video {
   width: 100%;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[260px\]{
+  width: 260px;
+}
+
+.w-\[270px\]{
+  width: 270px;
+}
+
 .scale-150{
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
